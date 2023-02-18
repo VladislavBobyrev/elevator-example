@@ -1,5 +1,7 @@
+export type CallElevator = (floor: number) => void
+
 export interface Engine {
-  callElevator(floor: number): void
+  callElevator: CallElevator
   getState(): Elevator[]
 }
 
